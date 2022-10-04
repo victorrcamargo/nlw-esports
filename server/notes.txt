@@ -1,0 +1,4 @@
+
+ecmascript modules de forma nativa
+passar type: module no package.json e trocar o nome do arquivo pra .MJS
+O backend sempre devolve a resposta em formato JSON, entao é necessário trabalhar desta forma utilizando o res.json

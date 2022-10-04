@@ -1,0 +1,32 @@
+Padrão de criação components react + TS
+
+interface NomeProps {
+  propriedade: tipo (string | number | undefined);
+  propriedade?: tipo (string | number | undefined); 
+  # Quando uma propriedade não for obrigatória ela precisa ter "?" a frente
+}
+
+function Nome(props: NomeProps) {
+  return (
+    <component>
+      {props.title} 
+      #titulo chegando via props enviado pela funçao app
+    </component>
+  )
+}
+
+function App() {
+  return(
+    <div>
+      <component title="titulo"/>
+      # Neste caso passei a propriedade title recebendo uma string, para o componente aceitar essa propriedade ela tem que passar pela interface e ser compativel com seu tipo declarado
+    </div>
+  )
+}
+
+# TODA INTERFACE pode ser construida usando estes 2 conceitos: COMPONENTES e PROPRIEDADES.
+
+PROPRIEDADES
+
+Propriedades permitem trazer diferenciação entre cada instância do componente em tela, exemplo:
+se tenho 3 botões e o texto de cada um precisa ser diferente, posso enviar uma propriedade title para o botão e chamá-la no componente principal
