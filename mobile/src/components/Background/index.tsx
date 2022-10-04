@@ -18,5 +18,3 @@ export function Background({ children }: Props) {
     </ImageBackground>
   );
 }
-
-// 1:28h time aula
