@@ -1,5 +1,1 @@
 node_modules/
-npm-debug.*
-
-.vscode/*
-!.vscode/extensions.json
